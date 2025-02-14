@@ -52,7 +52,7 @@ const Login = () => {
             backdropFilter: 'blur(10px)',
             borderRadius: 4,
             border: '1px solid rgba(255, 255, 255, 0.1)',
-            p: 4,
+            p: { xs: 2, sm: 4 }, // Adjust padding for mobile
             position: 'relative',
           }}
         >
@@ -74,7 +74,7 @@ const Login = () => {
               sx={{ 
                 fontSize: 48, 
                 color: '#4EDFFF',
-                mb: 2
+                mb: 2,
               }} 
             />
             <Typography 
@@ -83,7 +83,8 @@ const Login = () => {
               sx={{ 
                 color: '#fff',
                 fontWeight: 700,
-                mb: 2
+                mb: 2,
+                fontSize: { xs: '1.5rem', sm: '2rem' } // Responsive font size
               }}
             >
               Public Opinion Survey
@@ -97,7 +98,8 @@ const Login = () => {
               sx={{ 
                 color: '#4EDFFF',
                 mb: 2,
-                fontSize: '1.1rem'
+                fontSize: '1.1rem',
+                fontSize: { xs: '1.5rem', sm: '2rem' } // Responsive font size
               }}
             >
               Platform Features:
@@ -133,8 +135,8 @@ const Login = () => {
             sx={{
               background: 'linear-gradient(45deg, #4EDFFF, #39FF14)',
               color: '#0f172a',
-              padding: '12px 24px',
-              fontSize: '1rem',
+              padding: { xs: '16px', sm: '12px 24px' }, // Increase padding for mobile
+              fontSize: { xs: '1.2rem', sm: '1rem' }, // Responsive font size
               fontWeight: 600,
               textTransform: 'none',
               borderRadius: 2,
