@@ -128,9 +128,9 @@
 }
 
 /* Responsive adjustments */
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .glass-card {
     margin: 1rem;
-    padding: 3rem !important; 
+    padding: 2rem !important;
   }
-} */
+}
