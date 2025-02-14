@@ -1,0 +1,160 @@
+/* Add these styles to your index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Existing colors */
+  --primary-color: #4EDFFF;
+  --secondary-color: #39FF14;
+  --background-color: #1a1d24;
+  --paper-color: #242830;
+  --text-primary: #E4F1FF;
+  --text-secondary: #8B9CB3;
+  --accent-purple: #B24BF3;
+  --accent-pink: #FF3CAC;
+  
+  /* New colors for form elements */
+  --input-bg: #2A2F3A;
+  --input-border: rgba(78, 223, 255, 0.2);
+  --input-hover-border: rgba(78, 223, 255, 0.4);
+  --input-focus-border: rgba(78, 223, 255, 0.6);
+  --section-separator: rgba(78, 223, 255, 0.1);
+}
+
+/* Enhanced MUI overrides */
+.MuiInputBase-root {
+  background-color: var(--input-bg) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.MuiInputBase-root:hover {
+  background-color: #323845 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--input-border) !important;
+}
+
+.MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--input-hover-border) !important;
+}
+
+.MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--primary-color) !important;
+  border-width: 2px !important;
+}
+
+.MuiInputLabel-root {
+  color: var(--text-secondary) !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: var(--primary-color) !important;
+}
+
+.MuiInputBase-input {
+  color: var(--text-primary) !important;
+}
+
+/* Select element styling */
+.MuiSelect-select {
+  background-color: var(--input-bg) !important;
+}
+
+.MuiSelect-icon {
+  color: var(--primary-color) !important;
+}
+
+/* Button styling */
+.MuiButton-outlined {
+  border-color: var(--input-border) !important;
+  color: var(--primary-color) !important;
+}
+
+.MuiButton-outlined:hover {
+  border-color: var(--primary-color) !important;
+  background-color: rgba(78, 223, 255, 0.1) !important;
+}
+
+/* Section separation and spacing */
+.MuiGrid-container {
+  position: relative;
+  padding: 24px !important;
+  margin-bottom: 16px !important;
+  border: 1px solid var(--section-separator);
+  border-radius: 12px;
+  background-color: rgba(42, 47, 58, 0.4) !important;
+}
+
+/* Question section styling */
+.question-section {
+  position: relative;
+  margin-bottom: 32px !important;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--input-bg);
+  border: 1px solid var(--section-separator);
+}
+
+/* Option section styling */
+.option-section {
+  margin-top: 16px !important;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(42, 47, 58, 0.4);
+}
+
+/* Typography enhancements */
+.MuiTypography-h4 {
+  color: var(--primary-color) !important;
+  margin-bottom: 32px !important;
+}
+
+.MuiTypography-h6 {
+  color: var(--text-primary) !important;
+  margin: 16px 0 !important;
+}
+
+/* Icon button styling */
+.MuiIconButton-root {
+  background-color: rgba(78, 223, 255, 0.1) !important;
+  margin: 4px !important;
+}
+
+.MuiIconButton-root:hover {
+  background-color: rgba(78, 223, 255, 0.2) !important;
+}
+
+.MuiIconButton-colorError {
+  background-color: rgba(255, 60, 172, 0.1) !important;
+}
+
+.MuiIconButton-colorError:hover {
+  background-color: rgba(255, 60, 172, 0.2) !important;
+}
+
+/* Paper component enhancement */
+.MuiPaper-root {
+  background: var(--paper-color) !important;
+  border: 1px solid rgba(78, 223, 255, 0.05) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+  padding: 32px !important;
+}
+
+/* Form specific styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .MuiPaper-root {
+    padding: 16px !important;
+  }
+  
+  .MuiGrid-container {
+    padding: 16px !important;
+  }
+}

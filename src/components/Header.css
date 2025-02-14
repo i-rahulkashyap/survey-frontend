@@ -1,0 +1,9 @@
+.app-bar {
+  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-title {
+  flex-grow: 1;
+  font-weight: 600;
+}
