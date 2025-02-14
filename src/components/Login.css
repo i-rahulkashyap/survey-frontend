@@ -11,6 +11,7 @@
   );
   display: flex;
   align-items: center;
+  justify-content: center;
   perspective: 1000px;
 }
 
@@ -89,6 +90,12 @@
 .subtitle-animated {
   color: rgba(255, 255, 255, 0.7) !important;
   animation: slideUp 0.6s ease 0.2s backwards;
+}
+
+.info-text {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .login-button-animated {

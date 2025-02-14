@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Box, Container, Typography, Button, Paper, Alert } from '@mui/material';
+import { Box, Typography, Button, Paper } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import config from '../../config';
 import './Login.css';
@@ -38,29 +38,30 @@ const Login = () => {
       <div className="geometric-shapes">
         <div className="shape shape-1"></div>
         <div className="shape shape-2"></div>
-        <div className="shape shape-3"></div>
       </div>
-      <Container maxWidth="sm" className="content-wrapper">
-        <Paper elevation={0} className="glass-card">
-          <div className="card-content">
-            <Typography variant="h3" className="title-animated">
-              Welcome Back
-            </Typography>
-            <Typography variant="subtitle1" className="subtitle-animated">
-              Continue your journey with us
-            </Typography>
-            {error && <Alert severity="error">{error}</Alert>}
-            <Button
-              variant="contained"
-              startIcon={<GoogleIcon />}
-              onClick={handleLogin}
-              className="login-button-animated"
-            >
-              Continue with Google
-            </Button>
-          </div>
-        </Paper>
-      </Container>
+      <Box className="glass-card">
+        <Box className="card-content">
+          <Typography variant="h4" className="title-animated">
+            Public Opinion Survey
+          </Typography>
+          <Typography variant="subtitle1" className="subtitle-animated">
+            Sign in to continue
+          </Typography>
+          <Typography variant="body2" className="info-text">
+            Our survey application allows you to create, distribute, and analyze surveys with ease. 
+            Sign in to start creating surveys and collecting valuable feedback.
+          </Typography>
+          <Button
+            variant="contained"
+            className="login-button-animated"
+            startIcon={<GoogleIcon />}
+            onClick={handleLogin}
+          >
+            Login with Google
+          </Button>
+          {error && <Typography color="error">{error}</Typography>}
+        </Box>
+      </Box>
     </Box>
   );
 };
