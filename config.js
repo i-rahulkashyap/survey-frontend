@@ -1,5 +1,5 @@
 const config = {
-  apiBaseUrl: "http://localhost:3000"
+  apiBaseUrl: "https://survey-api-dhyh.onrender.com"
 };
 
 export default config;
