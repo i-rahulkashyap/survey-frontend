@@ -44,7 +44,7 @@ const Login = () => {
       </div>
 
       {/* Main Content */}
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Box
           className="glass-card"
           sx={{
